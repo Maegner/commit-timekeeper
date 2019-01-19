@@ -1,0 +1,6 @@
+{
+    "repositories": [
+        "/Users/user/example-folder/folder-with-repository",
+    ],
+    "user": "user@email.com"
+}
