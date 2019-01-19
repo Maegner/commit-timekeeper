@@ -4,7 +4,7 @@ import os, operator
 
 PROPERTIES_FILE_NAME = 'gitProperties.json'
 SPLITTER = '-()-'
-CMD_BRANCH = 'git log --branches  --source --pretty=oneline --author="{}" --after="{}"  --no-merges --no-decorate'
+CMD_BRANCH = 'git log --branches  --source --pretty=oneline --author="{}" --after="{}"  --no-merges --no-decorate --date="unix"'
 CMD_DATE = 'git log --branches --author="{}" --after="{}" --format="format:%H-()-%cd" --no-merges --date="unix"'
 
 def parseGitProperties():
