@@ -6,7 +6,7 @@ from utils import *
 def main():
     pass
 
-@main.command(help="- Shows the work you have done in the given repositories after the given date")
+@main.command("git_history",help="- Shows the work you have done in the given repositories after the given date")
 @click.option("--since",default="1 week ago")
 def git_history(since):
     for x in log_all(since):
